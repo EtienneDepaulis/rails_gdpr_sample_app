@@ -21,6 +21,16 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <div class="field">
+    <%= f.check_box :policy_rule_age %>
+    <%= f.label :policy_rule_age %>
+  </div>
+
+  <div class="field">
+    <%= f.check_box :policy_rule_privacy_terms %>
+    <%= f.label :policy_rule_privacy_terms %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
