@@ -39,6 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # User management
 gem 'devise'
 
+# GDPR management
+gem 'gdpr_rails', github: "EtienneDepaulis/gdpr_rails", branch: "rails_5_2"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
