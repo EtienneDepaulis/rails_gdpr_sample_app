@@ -43,7 +43,7 @@ gem 'devise'
 gem 'activeadmin'
 
 # GDPR
-gem 'gdpr_rails', github: "EtienneDepaulis/gdpr_rails", branch: "admin_user"
+gem 'gdpr_rails', github: "EtienneDepaulis/gdpr_rails", branch: "admin_user" #, path: "../gdpr_rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,6 +58,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener'
+  gem 'awesome_print'
 end
 
 group :test do
