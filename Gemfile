@@ -36,11 +36,14 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# User management
+# Authentication
 gem 'devise'
 
-# GDPR management
-gem 'gdpr_rails', github: "EtienneDepaulis/gdpr_rails", branch: "rails_5_2"
+# Admin
+gem 'activeadmin'
+
+# GDPR
+gem 'gdpr_rails', github: "EtienneDepaulis/gdpr_rails", branch: "admin_user"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

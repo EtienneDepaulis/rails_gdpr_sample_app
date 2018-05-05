@@ -2,10 +2,12 @@ PolicyManager::Config.setup do |c|
   c.logout_url = "logout"
   c.from_email = "admin@acme.com"
   c.admin_email_inbox = "foo@baaz.org"
-  # is_admin method in order for engine to know
-  # how to authorize admin only areas
+
+  c.current_admin_user_method = ->(controller) {
+    controller.current_admin_user
+  }
   c.is_admin_method = ->(o){
-    true
+    o.is_a? AdminUser
   }
 
   c.add_rule({name: "cookie", sessionless: true }  )
