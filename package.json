@@ -2,7 +2,11 @@
   "name": "rails_gdpr_sample_app",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5"
+    "@rails/webpacker": "3.5",
+    "activestorage": "^5.2.0",
+    "cookieconsent": "^3.0.6",
+    "rails-ujs": "^5.2.0",
+    "turbolinks": "^5.1.1"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
