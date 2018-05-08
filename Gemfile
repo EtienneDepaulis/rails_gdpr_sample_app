@@ -43,7 +43,10 @@ gem 'devise'
 gem 'activeadmin'
 
 # GDPR
-gem 'gdpr_rails', github: "EtienneDepaulis/gdpr_rails", branch: "admin_user" #, path: "../gdpr_rails"
+gem 'gdpr_rails', github: "prey/gdpr_rails"#, github: "EtienneDepaulis/gdpr_rails", branch: "admin_user" #, path: "../gdpr_rails"
+
+# Assets
+gem 'webpacker', '~> 3.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
